@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    height: 390px;
+    background: whitesmoke;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: thin solid black;
+
+
+}
+
+.nav1 a {
+    display: block;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.545);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav2 a {
+    display: block;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.nav3 a {
+    display: block;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.469);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lol a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.lol {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 20px;
+  gap: 2em;
+}
+
+.container-2 {
+    width: 704px;
+    height: 500px;
+    background: whitesmoke;
+    margin: auto;
+    margin-top: 50px;
+    border: thin solid black;
+    border-radius: 5px;
+
+
+}
+
+.lot {
+    margin-left: 500px;
+    align-items: center;
+}
+.home{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 1em;
+    margin-top: 50px;
+}
+/* Inside menu.css or within a <style> tag */
+
+@media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav1, .nav2, .nav3 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav1 a, .nav2 a, .nav3 a {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .logo {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .home h2 {
+      font-size: 16px;
+    }
+  
+    .nav1 a, .nav2 a, .nav3 a {
+      font-size: 14px;
+    }
+  
+    .logo i {
+      font-size: 18px;
+      margin: 0 5px;
+    }
+  
+    .lol {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .lol a {
+      display: block;
+      margin: 4px 0;
+    }
+  }
+  

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    border: thin solid rgba(0, 0, 0, 0.315);
+    background-color: white;
+    width: 100%;
+}
+
+.nav-1 {
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+input {
+    width: 40%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: thin solid black;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.nav-2{
+    display: flex;
+    list-style-type: none;
+    gap:2em;
+    margin-top: 10px;
+}
+.nav-2 li a{
+    color: rgba(0, 0, 0, 0.654);    
+}
+.dear{
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+}
+.dear img{
+    width: 350px;
+   
+   
+
+}
+.hero-sect{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.hero-sect img{
+    width: 300px;
+}
+/* For screen widths 700px and below */
+@media (max-width: 700px) {
+    nav.nav-1 {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    nav.nav-1 li,
+    nav.nav-1 input,
+    nav.nav-1 button,
+    nav.nav-1 i {
+      display: block;
+      margin: 5px 0;
+      text-align: center;
+    }
+  
+    .nav-2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+  
+    .hero-sect,
+    .dear > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .hero-sect img,
+    .dear img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* For screen widths 400px and below */
+  @media (max-width: 400px) {
+    nav.nav-1 {
+      padding: 10px;
+    }
+  
+    nav.nav-1 img {
+      width: 40px;
+    }
+  
+    nav.nav-1 input {
+      width: 80%;
+    }
+  
+    nav.nav-1 li {
+      font-size: 14px;
+    }
+  
+    .nav-2 {
+      font-size: 12px;
+      gap: 6px;
+      padding: 10px;
+    }
+  
+    .hero-sect,
+    .dear > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-sect img,
+    .dear img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

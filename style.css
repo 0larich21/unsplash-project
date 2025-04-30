@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    border: thin solid rgba(0, 0, 0, 0.315);
+    background-color: white;
+    width: 100%;
+}
+
+.nav-1 {
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+input {
+    width: 40%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: thin solid black;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.nav-2{
+    display: flex;
+    list-style-type: none;
+    gap:2em;
+    margin-top: 10px;
+}
+.nav-2 li a{
+    color: rgba(0, 0, 0, 0.654);    
+}
+.hero-sect{
+    display: flex;
+    margin-top: 80px;
+    justify-content:space-evenly;
+    gap: 2em;
+    width: 100%;
+}
+.card{
+    border-radius: 5px;
+    
+}
+.card1 h1{
+    margin-top:100px;
+}
+.card1 h5{
+    color: rgba(0, 0, 0, 0.815);
+    font-size: small;
+    font-weight: 100;
+}
+.card2{
+    object-fit: contain;
+    border: thin solid black;
+    width: 350px;
+    height: 300px;
+    gap: 2em;
+   
+}
+.card2 button a{
+    gap: 7em;
+    margin-top: 10px;
+    
+   
+    
+}
+.card2 button{
+    margin-top: 20px;
+    text-align: center;
+    margin:auto;
+    align-items: center;
+
+}
+.card2 a{
+    text-decoration: none;
+    color: black;
+    /* border: thin solid rgba(0, 0, 0, 0.688); */
+    border-radius: 5px;
+    gap: 2em;
+    justify-content: space-evenly;
+    
+  
+    
+}
+.card3{
+    border: thin solid black;
+    width: 318px;
+    height: 300px;
+}
+.loo{
+    display: flex;
+}
+.card3 h1 a{
+    text-decoration: none;
+    color: black;
+    font: weight 800px;
+    font-size: large;
+}
+.card3  a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight:300;
+    font-size:12;
+}
+.deer{
+    display: flex;
+}
+.second-sect{
+    width: 100%;
+    display:flex;
+}
+
+.img-car{
+    display:grid;
+    justify-content:center;
+    grid-template-columns: 1fr 1fr 1fr;
+    object-fit: contain;
+
+   
+    
+}
+ .car{
+    display:grid;
+    justify-content: center;
+    align-self: center;
+    gap: 1em;
+    width:100%;
+   
+
+}
+
+@media (max-width: 768px) {
+    .nav-1, .nav-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-1 li, .nav-2 li {
+        margin: 5px 0;
+        list-style: none;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero-sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .deer, .card-grid {
+        display: block;
+    }
+
+    .car img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 400px) {
+    .nav-1, .nav-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-1 li, .nav-2 li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    .nav-1 img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 90% !important;
+        margin-bottom: 10px;
+    }
+
+    .hero-sect {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card3 .loo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card3 img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .deer, .card-grid, .img-car {
+        display: block;
+    }
+
+    .car img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .fa-bars {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    h1, h5 {
+        font-size: 18px;
+    }
+
+    .card2 button {
+        width: 90%;
+        margin: 5px auto;
+    }
+}
+
+
